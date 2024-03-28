@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Multas</title>
+    <style>
+        body{
+            background-color: rgba(17, 17, 233, 0.541);
+            font: normal 18pt arial;
+        }
+        input{
+            width: 120px;
+            height: 20px;
+        }
+        div{
+            font: normal 18pt arial;
+            margin-top: 20px;
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="msg"></div>
+
+
+    <script>
+        function verificar()
+{ 
+        var vel = window.document.getElementById('txtvel');
+        var velRes = parseFloat(vel.value);
+        var msg = window.document.getElementById('msg'); 
+        msg.innerHTML = `Sua velocidade é de: ${velRes}KM/H`;
+
+    if(velRes > 60 ){
+        msg.innerHTML = `ACIMA DA VELOCIDADE <strong>MULTADO!!</strong>`;
+    }else{
+        msg.innerHTML = `BOA VIAGEM!!`;
+    }
+}
+    </script>
+</body>
+</html>

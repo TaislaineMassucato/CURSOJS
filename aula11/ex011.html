@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que país é este ??</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+
+    Qual país você és ? <input type="text" name="txtPais" id="txtPais">
+    <input type="button" value="resul" onclick="nacionalidade()">
+    <div id="resp"></div>
+
+
+    <script>
+        function nacionalidade(){
+            var pais = document.getElementById('txtPais');
+            var pa = String(pais.value)
+            var responde = document.getElementById('resp');
+
+            if(pa == 'Brasil'){
+                responde.innerHTML = 'Brasileiro!!'
+            }else{
+                responde.innerHTML = 'Estrangeiro!!'
+                
+            }
+        }
+    </script>
+</body>
+</html>

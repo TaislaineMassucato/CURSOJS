@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        alert('FORMATAÇÃO DE STRINGS...');
+        var nome = prompt('Digite seu nome...');
+        document.write(`Olá, <strong>${nome}</strong>!! <br/>`);
+        document.write(`seu contém <strong>${nome.length}</strong> letras... <br/>`);
+        document.write(`Nome em MAIUSCULO <strong>${nome.toUpperCase()}</strong> <br/>`);
+        document.write(`Nome em minusculo <strong>${nome.toLowerCase()}</strong> <br/>`);
+        document.write(`------------------------------------------- <br/>`);
+
+        alert('EM SEGUIDA VEREMOS(CONVERSÕES VALORES)...');
+        document.write(`CONVERSÕES DE VALOR <br/>`);
+
+        var salario = 12903;
+        document.write(`Valor salario sem formatação : ${salario}<br/>`);
+        document.write(`valor com <strong>Vírgula</strong> + <strong>2 casas decimais</strong> : ${salario.toFixed(2).replace('.',',')}<br/>`);
+        document.write(`Valor em Real BR: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br/>`);
+        document.write(`Valor em Dolár: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}<br/>`);
+        document.write(`Valor em Euro: ${salario.toLocaleString('pt-BR',{style: 'currency',currency: 'EUR'})}<br/>`);
+    </script>
+</body>
+</html>
