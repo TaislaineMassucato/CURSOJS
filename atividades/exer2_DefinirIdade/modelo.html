@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Definindo Idade</h1>
+    </header>
+    <section>
+        <p> Qual teu nome ?:
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p> Qual sexo: 
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p> Qual ano de nascimento ? 
+            <input type="number" name="ano" id="ano">      
+        </p>
+        <p>
+            <input type="button" value="calcular" onclick="calcular()">
+        </p>
+        <div id="msg">Testando...</div>
+    </section>
+    <footer>
+        <p>&copy; TaislaineMassucato</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
