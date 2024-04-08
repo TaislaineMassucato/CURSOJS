@@ -42,6 +42,7 @@ function calcular()
                 img.setAttribute('src' , 'adultoMulher.jpg')
             }else{
                 img.setAttribute('src' , 'idosoMulher.jpg')
+                document.body.style.background = 'black'
             }
         }
    }
